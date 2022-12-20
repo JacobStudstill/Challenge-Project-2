@@ -37,10 +37,9 @@ header .navbar ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     flex-basis: 20%;
     text-align: center;
-    border-right: solid blue 4px;
+    border-right: solid rgb(72, 72, 114) 4px;
 }
 .about p {
     margin: 30px;
@@ -58,7 +57,7 @@ header .navbar ul {
     align-items: center;
     flex-basis: 20%;
     text-align: center;
-    border-right: solid blue 4px;
+    border-right: solid rgb(72, 72, 114) 4px;
 }
 .work p {
     margin: 30px;
