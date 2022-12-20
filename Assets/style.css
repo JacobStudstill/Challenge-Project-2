@@ -51,12 +51,17 @@ header .navbar ul {
     text-decoration: underline 2px;
     text-underline-offset: 5px;
 }
+.navbar a:visited{
+    text-decoration: none;
+    color: var(--fontcolor)
+}
 
 .about img {
     max-width: 13%;
     max-height: 13%;
     border:var(--fontcolor) solid 3px;
 }
+
 .about p {
     line-height: 1.7;
     font-weight:500;
@@ -69,7 +74,7 @@ header .navbar ul {
 
 
 .page-section {
-    margin: 25px 0;
+    margin: 3% 0;
     padding: 10px 0;
     display: flex;
     flex-direction: row;
@@ -119,8 +124,19 @@ header .navbar ul {
     margin-left: 1%
 }
 
+.work-1 {
+    background-image: url(./portfolio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    opacity: 60%;
+}
+.work-1:hover {
+    opacity: 100%;
+}
+
 .work-2 {
-    background-image: url(./studyguide.png);
+    background-image: url(./SEO.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover ;
@@ -130,12 +146,37 @@ header .navbar ul {
     opacity: 100%;
 }
 
+.work-3 {
+    background-image: url(./yardcare.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    opacity: 60%;
+}
+.work-3:hover {
+    opacity: 100%;
+}
+
+.work-4 {
+    background-image: url(./studyguide.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    opacity: 60%;
+}
+.work-4:hover {
+    opacity: 100%;
+}
+
+
+
 .flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
 }
-
-
+.contact {
+    margin-top: 4%;
+}
 .contact address {
     display: flex;
     flex-wrap: wrap;
