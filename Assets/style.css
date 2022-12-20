@@ -31,7 +31,7 @@ header .navbar ul {
     justify-content: center;
     list-style: none;
     margin-right: 50px;
-    color: 
+    color: var(--fontcolor);
 }
 .navbar ul li {
     padding:10px;
@@ -40,37 +40,50 @@ header .navbar ul {
 }
 
 .about{
+    margin-top:15px;
     display: flex;
     flex-direction: row;
+}
+.about img {
+    display:flex;
+    max-width:125px;
+    max-height: 125px;
+    flex-basis:5%;
+    margin-left: 2.5%;
+    position: relative;
+    top: 20px;
 }
 .about h2 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex-basis: 10%;
-    text-align: center;
-    border-right: solid var(--background)
+    justify-content: end;
+    flex-basis: 15%;
+    color: var(--background)
 }
 .about p {
     margin: 30px;
     line-height: 140%;
-    flex-basis: 90%;
+    flex-basis: 80%;
+}
+.border {
+    border-right: solid var(--background);
+    margin-left: 1%;
 }
 
 .work{
+    margin-top:15px;
     display: flex;
     flex-direction: row;
 }
 .work h2 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 20%;
-    text-align: center;
-    border-right: solid var(--background)
+    justify-content: end;
+    flex-basis: 15%;
+    color: var(--background)
 }
 .work p {
     margin: 30px;
     line-height: 140%;
+    flex-basis: 90%;
 }
