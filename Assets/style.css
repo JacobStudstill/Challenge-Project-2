@@ -75,7 +75,7 @@ header .navbar ul {
     padding-right:15px;
     align-items: flex-start;
     border-right: 4px solid var(--background);
-    font-size: 4vw;
+    font-size: 2vw;
     line-height: 1.1;
 }
 .page-section > div {
