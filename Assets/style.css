@@ -11,9 +11,10 @@ p {
 }
 
 :root {
-    --fontcolor: #3e7ee6;
-    --background: #141e2e;
+    --fontcolor: #3a69b5;
+    --background: #1f3042;
     --third: #3de3dd;
+    --flexbox: #636161;
 }
 
 header {
@@ -24,13 +25,16 @@ header {
     background-color: var(--background);
     color: var(--fontcolor);
     min-width:100%;
+    padding-top:1%;
+    padding-bottom: 1%;
 }
 
 header h1 {
     font-weight: 800;
     font-size: 200%;
-    padding-left: 40px;
-    padding-right: 10px;
+    padding: .1% 1% .1% 3.5%;
+    padding-left: 3.5%;
+    padding-right: 1%;
     background-color: var(--fontcolor);
     color: var(--background);
 }
@@ -49,13 +53,17 @@ header .navbar ul {
 }
 
 .about img {
-    max-width:125px;
-    max-height: 125px;
+    max-width: 13%;
+    max-height: 13%;
+    border:var(--fontcolor) solid 3px;
+}
+.about p {
+    line-height: 1.7;
 }
 
 .left {
     float:left;
-    padding:0 20px 20px 0;
+    margin:0 20px 20px 0;
 }
 
 
@@ -77,6 +85,7 @@ header .navbar ul {
     border-right: 4px solid var(--background);
     font-size: 2vw;
     line-height: 1.1;
+    color: var(--background);
 }
 .page-section > div {
     flex: 0 0 77%;
@@ -88,9 +97,9 @@ header .navbar ul {
     justify-content: center;
 }
 .flex-item {
-    border: 5px solid var(--background);
-    background-color: var(--third);
-    color:#3e7ee6;
+    border: 5px solid var(--fontcolor);
+    background-color: var(--flexbox);
+    color:var(--fontcolor);
     min-height: 150px;
     max-height: 150px;
     flex-basis: 48.9%;
@@ -101,8 +110,23 @@ header .navbar ul {
     text-decoration: none;
     background-size: 150%;
 }
+
+.flex-item div {
+    color:black;
+    border:black solid;
+    background-color: #3a69b5;
+    margin-left: 1%
+}
+
 .work-2 {
-    background-image: url(./favicon.jpg);
+    background-image: url(./studyguide.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    opacity: 60%;
+}
+.work-2:hover {
+    opacity: 100%;
 }
 
 .flex-item:first-child {
