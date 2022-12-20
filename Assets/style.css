@@ -3,18 +3,27 @@ body {
     padding:0;
     font-size: 100%;
 }
+:root {
+    --fontcolor: #3e7ee6;
+    --background: #141e2e;
+}
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(29, 29, 36);
-    color: white;
+    background-color: var(--background);
+    color: var(--fontcolor);
     min-width:100%;
 }
 
-header h1{
+header h1 {
+    font-weight: 800;
+    font-size: 200%;
     padding-left: 40px;
-    background-color: aqua;
+    padding-right: 10px;
+    background-color: var(--fontcolor);
+    color: var(--background);
 }
 header .navbar ul {
     display: flex;
@@ -22,6 +31,7 @@ header .navbar ul {
     justify-content: center;
     list-style: none;
     margin-right: 50px;
+    color: 
 }
 .navbar ul li {
     padding:10px;
@@ -37,13 +47,14 @@ header .navbar ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-basis: 20%;
+    flex-basis: 10%;
     text-align: center;
-    border-right: solid rgb(72, 72, 114) 4px;
+    border-right: solid var(--background)
 }
 .about p {
     margin: 30px;
     line-height: 140%;
+    flex-basis: 90%;
 }
 
 .work{
@@ -57,8 +68,9 @@ header .navbar ul {
     align-items: center;
     flex-basis: 20%;
     text-align: center;
-    border-right: solid rgb(72, 72, 114) 4px;
+    border-right: solid var(--background)
 }
 .work p {
     margin: 30px;
+    line-height: 140%;
 }
