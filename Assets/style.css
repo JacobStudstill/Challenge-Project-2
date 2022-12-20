@@ -2,11 +2,14 @@ body {
     margin:0;
     padding:0;
     font-size: 100%;
+    font-family: sans-serif;
 }
+
 p {
     margin:0;
     padding:0;
 }
+
 :root {
     --fontcolor: #3e7ee6;
     --background: #141e2e;
@@ -15,6 +18,7 @@ p {
 header {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     background-color: var(--background);
     color: var(--fontcolor);
@@ -43,75 +47,38 @@ header .navbar ul {
     text-underline-offset: 5px;
 }
 
-.about {
-    margin-top:15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 .about img {
     max-width:125px;
     max-height: 125px;
-    padding-left: 2.5%;
-    position: relative;
-    top: 20px;
 }
-.about h2 {
+
+.left {
+    float:left;
+    padding:0 20px 20px 0;
+}
+
+
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    flex-basis: 15%;
-    color: var(--background)
-}
-.about p {
-    display: flex;
     flex-wrap: wrap;
-    margin: 30px;
-    line-height: 170%;
-    flex-basis: 70%;
-
-}
-.border {
-    border-right: solid var(--background);
-    margin-left: 1%;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
-.work {
-    margin-top:15px;
-    display: flex;
-    flex-direction: row;
-}
-.work h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    flex-basis: 15%;
-    color: var(--background)
-}
-.work p {
-    /* margin: 30px; */
-    line-height: 140%;
-    flex-basis: 85%;
-}
-
-.contact {
-    margin-top:15px;
-    display: flex;
-    
-}
-.contact h2 {
-    flex-basis: 15%;
+.page-section > h2 {
+    flex: 0 0 20%;
     text-align: right;
+    padding-right:15px;
+    align-items: flex-start;
+    border-right: 4px solid var(--background);
+    font-size: 4vw;
+    line-height: 1.1;
 }
-.contact ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
+.page-section > div {
+    flex: 0 0 77%;
 }
-.contact ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-decoration: underline 2px;
-    text-underline-offset: 5px;
-}
+
+
