@@ -93,6 +93,7 @@ header .navbar ul {
     line-height: 1.1;
     color: var(--background);
 }
+
 .page-section > div {
     flex: 0 0 77%;
 }
