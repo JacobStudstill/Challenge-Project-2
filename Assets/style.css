@@ -125,7 +125,7 @@ header .navbar ul {
     padding-right:15px;
     align-items: flex-start;
     border-right: 4px solid var(--background);
-    font-size: 2vw;
+    font-size: 2.5vw;
     line-height: 1.1;
     color: var(--background);
 }
@@ -193,7 +193,7 @@ header .navbar ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover ;
-    opacity: 60%;
+    opacity: 55%;
 }
 .work-3:hover {
     opacity: 100%;
@@ -258,11 +258,24 @@ header .navbar ul {
 }
 
 @media screen and (max-width:1816px){
-.flex-item {
-    flex-basis: 35%;
+    .flex-item {
+        flex-basis: 35%;
+    }
+    .flex-item:first-child {
+        flex-basis: 71%;
+    }
+    .work-1,.work-2,.work-3,.work-4,.work-5{
+        background-size: 100% ;
+    }
+
 }
-.flex-item:first-child {
-    flex-basis: 71%;
+@media screen and (max-width:705px) {
+    .widebar .showfirst {
+        font-size: 100%;
+    }
+    .widebar .showsecond {
+        font-size: 100%;
+    }
 }
 @media screen and (max-width:641px){
     header { flex-direction: column;
@@ -274,7 +287,7 @@ header .navbar ul {
         margin-right: 0;
     }
 }
-}
+
 
 
 
