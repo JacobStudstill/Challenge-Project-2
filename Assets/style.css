@@ -257,6 +257,24 @@ header .navbar ul {
     color: var(--third);
 }
 
+@media screen and (max-width:1816px){
+.flex-item {
+    flex-basis: 35%;
+}
+.flex-item:first-child {
+    flex-basis: 71%;
+}
+@media screen and (max-width:641px){
+    header { flex-direction: column;
+    }
+    header h1 {
+        text-align: center;
+    }
+    header .navbar ul{
+        margin-right: 0;
+    }
+}
+}
 
 
 
