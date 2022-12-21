@@ -84,7 +84,7 @@ header .navbar ul {
 }
 
 .page-section > h2 {
-    flex: 0 0 20%;
+    flex: 0 0 18%;
     text-align: right;
     padding-right:15px;
     align-items: flex-start;
@@ -95,7 +95,7 @@ header .navbar ul {
 }
 
 .page-section > div {
-    flex: 0 0 77%;
+    flex: 0 0 80%;
 }
 
 .projects {
