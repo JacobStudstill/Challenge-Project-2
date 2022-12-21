@@ -51,9 +51,21 @@ header .navbar ul {
     text-decoration: underline 2px;
     text-underline-offset: 5px;
 }
+.navbar a:link {
+    text-decoration: none;
+    color:var(--fontcolor);
+}
+.navbar a:hover {
+    text-decoration: none;
+    color:var(--fontcolor);
+}
 .navbar a:visited{
     text-decoration: none;
-    color: var(--fontcolor)
+    color: var(--fontcolor);
+}
+.navbar a:active {
+    text-decoration: none;
+    color: var(--fontcolor);
 }
 
 .about img {
@@ -71,7 +83,6 @@ header .navbar ul {
     float:left;
     margin:0 20px 20px 0;
 }
-
 
 .page-section {
     margin: 3% 0;
