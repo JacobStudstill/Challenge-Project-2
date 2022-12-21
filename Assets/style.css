@@ -67,6 +67,31 @@ header .navbar ul {
     text-decoration: none;
     color: var(--fontcolor);
 }
+.widebar {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid var(--fontcolor) 3px;
+    min-width: 100%;
+    background-color: var(--background);
+}
+.widebar .showfirst {
+    text-align: right;
+    font-size:160%;
+    color: var(--fontcolor);
+    padding: .5% 2.8%
+}
+.widebar .showsecond{
+    text-align: right;
+    font-size:160%;
+    color: var(--background);
+    padding: .5% 2.8%
+}
+.widebar:hover {
+    background-color: var(--fontcolor);
+    border: solid var(--background) 3px;
+}
+
 
 .about img {
     max-width: 13%;
@@ -113,7 +138,9 @@ header .navbar ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
+
 .flex-item {
     border: 5px solid var(--fontcolor);
     background-color: var(--flexbox);
@@ -131,9 +158,12 @@ header .navbar ul {
 
 .flex-item div {
     color:black;
-    border:black solid;
+    border:black solid 4px;
     background-color: #3a69b5;
-    margin-left: 1%
+    margin-left: 0%;
+    min-width: 10%;
+    min-height:10%;
+
 }
 
 .work-1 {
@@ -177,6 +207,16 @@ header .navbar ul {
     opacity: 60%;
 }
 .work-4:hover {
+    opacity: 100%;
+}
+.work-5 {
+    background-image: url(./password.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    opacity: 60%;
+}
+.work-5:hover {
     opacity: 100%;
 }
 
