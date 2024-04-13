@@ -111,7 +111,7 @@ header .navbar ul {
 
 .page-section {
     margin: 3% 0;
-    padding: 10px 0;
+    padding: 10px 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
