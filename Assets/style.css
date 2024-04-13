@@ -29,6 +29,14 @@ header {
     padding-bottom: 1%;
 }
 
+header a{
+color:#1f3042;
+text-decoration: none;
+}
+header a:visited{
+    text-decoration: none;
+}
+
 header h1 {
     font-weight: 800;
     font-size: 200%;
