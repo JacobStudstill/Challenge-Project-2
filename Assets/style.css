@@ -33,6 +33,7 @@ header a{
 color:#1f3042;
 text-decoration: none;
 }
+
 header a:visited{
     text-decoration: none;
 }
@@ -278,6 +279,9 @@ header .navbar ul {
 
 }
 @media screen and (max-width:705px) {
+    .left{
+        display: none;
+    }
     .widebar .showfirst {
         font-size: 100%;
     }
@@ -293,5 +297,67 @@ header .navbar ul {
     }
     header .navbar ul{
         margin-right: 0;
+    }
+}
+@media screen and (max-width:578px){
+    #aboutme{
+        font-size:1em
+    }
+}
+
+@media screen and (max-width:500px){
+    .flex-item {
+        flex-basis: 35%;
+        max-height: 20%;
+    }
+    .flex-item:first-child {
+        min-height: 150px;
+    }
+    .flex-item{
+        min-width: 150px;
+    }
+    .page-section h2{
+        font-size: .7em;
+    }
+    .contact h2{
+        display: none;
+    }
+    .contact{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:404px){
+    #aboutme{
+        display: none;
+    }
+    #contact a{
+        font-size: 1em;
+    }
+    .about p{
+        text-align: center;
+        padding:0 .5em 0 .5em;
+    }
+    .page-section p{
+        text-align: center;
+        padding:0%
+    }
+    .projects a .flex-item .work-1{
+        display: none;
+    }
+}
+
+@media screen and (max-width:323px){
+    .navbar{
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width:288x){
+    .widebar{
+        display: none;
+    }
+    .showfirst{
+        display: none;
     }
 }
